@@ -1,0 +1,8 @@
+Denis,Host
+Cesar,Surfer
+Elisa ,Host
+Olivia,Host
+Daniel,Photo
+Lais,Surfer
+Zelito,Pintor
+teste,testado
