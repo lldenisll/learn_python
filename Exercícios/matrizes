@@ -1,0 +1,29 @@
+#matrizes
+import pprint
+
+
+def criamatriz (linhas, colunas,valor):
+    matriz = []
+    for i in range (linhas):
+        linha = []
+        for j in range (colunas):
+            linha.append(valor)
+        matriz.append(linha)
+    return matriz
+
+def lematriz():
+
+    linhas=int(input("Digite o número de linhas da matriz: "))
+    colunas=int(input("Digite o número de colunas da matriz "))
+
+    return criamatriz(linhas,colunas)
+
+
+
+
+print("Vamos criar uma matriz?")
+#x=lematriz()
+y=[[1, 2, 3], [4, 5, 6], [7, 8, 9],[1,2,3]]
+pprint.pprint(y)
+
+

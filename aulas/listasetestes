@@ -1,0 +1,35 @@
+lista=[1,2,3,4,5,6,7,8,9,10]
+
+def menor (lista):
+    x=min(lista)
+    return x
+
+def maior (lista):
+    y=max(lista) #o professor criou um while para encontrar o maior, mas usei a própria função do python
+    return y
+def minmax(lista):
+    print("O maior número é: ",maior(lista))
+    print("O menor número é: ",menor(lista))
+
+menor(lista)
+maior(lista)
+minmax(lista)
+def testador(list, valor_esperado):
+    valor_calculado = menor(list)
+    if valor_calculado != valor_esperado:
+        print("Valor errado para lista", list)
+        print("Valor esperado era: ",valor_esperado,". E o valor calculado foi: ",valor_calculado)
+    else:
+        print("Aparenemente tudo está funcionando bem")
+def testes():
+    print("Iniciando os testes")
+    testador([1,2,3,4,5],1) #procurar uma forma de automatizar os testes com o while
+    testador([1,2,3,4,5,6,7,8],1)
+    testador([0,10,21,24,12,-4],-4)
+    print("Fim dos testes")
+
+perg=input("Quer testar as funções? Sim ou Não?: ")
+if perg == "Sim":
+    testes()
+if perg != "Sim":
+    print("Fim")

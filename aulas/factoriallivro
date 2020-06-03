@@ -1,0 +1,12 @@
+def factorial(n): #as funções são boas para organização do código, porém exigem mais do python do que um for loop por ex
+    if n == 1: # The termination condition
+        return 1 # The base case else:
+    else:
+        res = n * factorial(n-1) # The recursive call return res
+        return res
+
+print(factorial(5))
+
+x=int(input("Digite um número inteiro positivo, e veja seu fatorial: "))
+print(factorial(x))
+

@@ -1,0 +1,26 @@
+#módulos
+#arquivos com extensão .py contendo
+#definições e comandos (statements)
+#módulos sao importados com o comando import (sem .py)
+#o nome do módulo (nome do arquivo sem a extensão .py) fica disponivel na variavel _name_
+
+
+def fazAlgo(string):
+    pos = len(string)-1
+    stringMi = string.lower()
+    string = string.upper()
+    stringRe = ""
+    while pos >= 0:
+        if string[pos] == 'A' or string[pos] == 'E' or string[pos] == 'I' or string[pos] == 'O' or string[pos] == 'U':
+            stringRe = stringRe + string[pos]
+        else:
+            stringRe = stringRe + stringMi[pos]
+        pos = pos - 1
+    return stringRe
+
+if __name__ == "__main__": #esse comando testa se o módulo será executado como script, se for igual ele executa assim que chamado
+    print(fazAlgo("teste"))
+    print(fazAlgo("o ovo do avestruz"))
+    print(fazAlgo("A CASA MUITO ENGRAÇADA"))
+    print(fazAlgo("A TELEvisão queBROU"))
+    print(fazAlgo("A Vaca Amarela"))

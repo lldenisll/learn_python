@@ -1,0 +1,18 @@
+#jogo do anagrama
+import random
+random.seed()
+def anagrama(aStr):
+    anagrama = ''.join(random.sample(aStr, len(aStr)))
+    return anagrama
+
+palavras=["Camiseta","Botina","Carro","Sorvete","Bola","Requeijão","Corona","Garrafa","Pizza","Toalha","Calango","Barriga"]
+p1="Banana"
+aleat = random.choice(palavras)
+print(anagrama(aleat))
+print("")
+resposta=input("Digite a palavra certa: ")
+if resposta==aleat:
+    print("Parabéns, você acertou!")
+else:
+    print("Não está correto!")
+

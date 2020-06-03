@@ -1,0 +1,18 @@
+def peso_altura():
+
+    return 78, 1.80
+# nesse caso podemos atribuir a duas variaveis
+# peso, altura = peso_altura()
+# de modo geral podemos atribuir valores a variaveis dessa forma
+# a, b = 10, 20
+# a, b = b, a (troca os valores das variaveis)
+
+def pagamento_semanal(valor,horas = 40): #os parametros opicionais devem ficar ao fim dos parametros obrigatórios
+    #asserção de invariantes, usado quando sabemos quando precisamos de uma expressao verdadeira para que o programa faça sentido, caso seja falso, dá mensagem de erro
+    assert valor>=0 and horas >0
+    return valor * horas
+def calculo(x, y = 10, z = 5):
+    return x + y * z;
+def horario_em_segundos(h, m, s):
+    assert h >= 0 and m >= 0 and s >= 0
+    return h * 3600 + m * 60 + s
