@@ -1,0 +1,18 @@
+class Calculadora:
+    def __init__(self,num1,num2):
+        self.valor_a=num1
+        self.valor_b=num2
+    def soma(self):
+        return self.valor_a + self.valor_b
+    def subtração(self):
+        return self.valor_a - self.valor_b
+    def multiplicacao(self):
+        return self.valor_a * self.valor_b
+    def divisao(self):
+        return self.valor_a / self.valor_b
+
+calculadora=Calculadora((int(input("Digite um valor: " ))),(int(input("Digite outro valor: "))))
+print("O resultado da soma é: ",calculadora.soma())
+print("O resultado da subtração é: ",calculadora.subtração())
+print("O resultado da multiplicação é: ",calculadora.multiplicacao())
+print("O resultado da divisão é: ",calculadora.divisao())
