@@ -10,9 +10,10 @@ class Calculadora:
         return self.valor_a * self.valor_b
     def divisao(self):
         return self.valor_a / self.valor_b
-
-calculadora=Calculadora((int(input("Digite um valor: " ))),(int(input("Digite outro valor: "))))
-print("O resultado da soma é: ",calculadora.soma())
-print("O resultado da subtração é: ",calculadora.subtração())
-print("O resultado da multiplicação é: ",calculadora.multiplicacao())
-print("O resultado da divisão é: ",calculadora.divisao())
+if __name__ == "__main__":
+    print(__name__)
+    calculadora=Calculadora((int(input("Digite um valor: " ))),(int(input("Digite outro valor: "))))
+    print("O resultado da soma é: ",calculadora.soma())
+    print("O resultado da subtração é: ",calculadora.subtração())
+    print("O resultado da multiplicação é: ",calculadora.multiplicacao())
+    print("O resultado da divisão é: ",calculadora.divisao())

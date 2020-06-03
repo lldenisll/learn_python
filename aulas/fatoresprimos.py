@@ -1,4 +1,7 @@
 #Dado um número inteiro n, n>1, imprimir sua decomposição em fatores primos, indicando também a multiplicidade de cada fator
+import sys
+
+
 
 n=int(input("Digite um número inteiro: "))
 
@@ -16,3 +19,4 @@ while n>1:
         
     fator=fator+1
     multiplicidade=0
+
