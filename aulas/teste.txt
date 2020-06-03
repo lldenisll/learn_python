@@ -6,3 +6,5 @@ Daniel,Photo
 Lais,Surfer
 Zelito,Pintor
 teste,testado
+Cesar,Surfer
+Raulzito,Surfer

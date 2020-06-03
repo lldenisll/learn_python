@@ -20,7 +20,7 @@ def cad_usuario(nome_arquivo):
     usuario=usuario.split('\n')
     for x in usuario:
         lista_usuarios=x.split(",")
-        #print(lista_usuarios) imprime a lsita completa de usuarios
+        print(lista_usuarios) #imprime a lsita completa de usuarios
         us=lista_usuarios[0]
         print(us) #imprime apenas o usuário
 def copia_arquivo(nome_arquivo):
